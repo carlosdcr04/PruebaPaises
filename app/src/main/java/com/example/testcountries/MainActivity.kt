@@ -88,11 +88,11 @@ class MainActivity : AppCompatActivity(), LocationListener {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == PERMISSION_REQUEST_ACCESS_FINE_LOCATION) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.message_permission_enabled), Toast.LENGTH_SHORT).show()
                 getLocation()
             }
             else {
-                Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.message_enable_permission), Toast.LENGTH_SHORT).show()
             }
         }
     }
