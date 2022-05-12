@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestCountries</string>
+
+    <string name="text_title_dialog">Click,</string>
+    <string name="text_description_dialog">Has dado click en el país de</string>
+    <string name="message_current_location">Las coordenadas de tu ubicación actual son:</string>
+    <string name="message_enable_permission">Habilita el permiso manualmente</string>
+    <string name="message_permission_enabled">Permiso habilitado</string>
+</resources>
